@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c38200e-4951-4ea4-a689-8c3bb6900d83" name="Default" comment="xxx">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Fututres/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/kotlinc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__com_typesafe_scala_logging_scala_logging_2_12_3_5_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scala_lang_modules_scala_parser_combinators_2_12_1_0_4_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scala_lang_modules_scala_xml_2_12_1_0_5_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scala_lang_scala_library_2_12_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_12_2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scalactic_scalactic_2_12_3_0_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_scalatest_scalatest_2_12_3_0_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_slf4j_slf4j_api_1_8_0_alpha2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/libraries/SBT__org_slf4j_slf4j_simple_1_8_0_alpha2_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/modules/monads-build.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/modules/monads.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/sbt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/scala_compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/build.sbt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/project/build.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/src/main/scala/monads/Main.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/src/main/scala/monads/Monad.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Monads/src/test/scala/monads/test/Test.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/bindings/B.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/compunit/inner/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/compunit/inner/B.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/compunit/inner/Main.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/names/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/namespriority/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/namespriority/package.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/packaging/x/y/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/packobject/Main.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/packobject/package.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/packref/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/specification/p/A.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/specification/p/X.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/src/specification/q/X.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../top-level-defs/top-level-defs.iml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../futures/src/main/scala/StorageBoking.scala" afterPath="$PROJECT_DIR$/../futures/src/main/scala/StorageBooking.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../futures/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../futures/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../futures/build.sbt" afterPath="$PROJECT_DIR$/../futures/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../top-level-defs/.idea/misc.xml" afterPath="$PROJECT_DIR$/../top-level-defs/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../top-level-defs/.idea/modules.xml" afterPath="$PROJECT_DIR$/../top-level-defs/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../top-level-defs/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../top-level-defs/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9c38200e-4951-4ea4-a689-8c3bb6900d83" name="Default" comment="xxx" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -651,7 +603,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="1" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
