@@ -7,23 +7,23 @@ import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
-import scalafx.scene.control.Button
-import scalafx.scene.layout.HBox
+import scalafx.scene.control.{Button, Separator}
+import scalafx.scene.layout.{HBox, VBox}
 import scalafx.scene.text.Text
 
 object Buttons extends JFXApp {
 
   stage = new PrimaryStage {
 
-    scene = new Scene {
-
-      content = new HBox(5) {
+    scene = new Scene(400, 300) {
+      root = new VBox(5) {
         padding = Insets(5)
-        val lab = new Text {
+        val lab = new Text() {
           prefWidth = 220
         }
-        content = List(
+        children = List(
           lab,
+          new Separator(),
           new Button("Time") {
             onAction = handle {
               lab.text = (new Date).toString
@@ -34,8 +34,8 @@ object Buttons extends JFXApp {
 
       }
 
+
     }
 
   }
-
 }
