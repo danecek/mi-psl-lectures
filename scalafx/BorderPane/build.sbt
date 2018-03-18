@@ -1,8 +1,5 @@
 name := "BorderPane"
-
 version := "1.0"
-
-scalaVersion := "2.11.6"
-
-libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.0-R4"
+scalaVersion := "2.12.4"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.144-R12"
     

@@ -6,9 +6,6 @@ import scalafx.scene.Scene
 import scalafx.scene.control.Label
 import scalafx.scene.layout.BorderPane
 
-/**
- * Created by danecek on 15.3.15.
- */
 object BorderPaneMain extends JFXApp {
 
   stage = new PrimaryStage {

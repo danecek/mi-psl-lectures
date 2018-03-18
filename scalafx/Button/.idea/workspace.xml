@@ -1,7 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d868af93-c876-4f5a-93ee-057238b5f2a2" name="Default" comment="" />
+    <list default="true" id="d868af93-c876-4f5a-93ee-057238b5f2a2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/hydra.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_4_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_3_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/libraries/sbt__org_scalafx_scalafx_2_12_8_0_144_R12_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/libraries/scala_sdk_2_12_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/modules/borderpane.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../BorderPane/.idea/scala_settings.xml" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/.idea/CustomersFX.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/hydra.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_4_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_12_4_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/libraries/sbt__org_scalafx_scalafx_2_12_8_0_144_R12_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/modules/scalafx-build.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/sbt.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/scala_compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/build.sbt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/javafx/scene/control/annotations.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/project/build.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/CreateDialog.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/Customer.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/CustomersMenuBar.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/Data.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/ScalaFXCustomers.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/actions/CreateAction.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/actions/CustomersAction.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/actions/DeleteAction.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/actions/ExitAction.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/view/CustomersTable.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../CustomersFX/CustomersFX/src/main/scala/customers/view/MainWindow.scala" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/SBT__org_scala_lang_scala_library_2_11_6_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/SBT__org_scalafx_scalafx_2_11_8_0_0_R4_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.idea/scopes/scope_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/xxx/.indexes/af/history.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.scala-ide.sdt.core.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1006886344.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1349214191.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1505962263.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/159012781.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1602761821.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1780567368.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2407519682.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2793040954.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/305989153.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3073563040.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3101176486.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3359783950.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3468862747.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3829965357.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/4232528909.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/4270560554.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/88805548.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/893322113.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/986665836.index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/invalidArchivesCache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.scala-ide.sdt.core/compiler-interfaces/2.11.6/compiler-interface.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/libraries/SBT__org_scala_lang_scala_library_2_11_6_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/libraries/SBT__org_scalafx_scalafx_2_11_8_0_0_R4_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/misc.xml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/modules.xml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/modules/BorderPane.iml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/modules/BorderPane.iml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/modules/borderpane-build.iml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/modules/borderpane-build.iml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/sbt.xml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/sbt.xml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BorderPane/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/build.sbt" afterPath="$PROJECT_DIR$/../BorderPane/build.sbt" />
+      <change beforePath="$PROJECT_DIR$/../BorderPane/src/main/scala/borderpane/BorderPaneMain.scala" afterPath="$PROJECT_DIR$/../BorderPane/src/main/scala/borderpane/BorderPaneMain.scala" />
+    </list>
     <ignored path="$USER_HOME$/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/examples/DraggablePanelsExample.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
-              <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+              <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -58,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/examples/Buttons.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="e#18#39#0" expanded="true" />
               </folding>
@@ -157,7 +264,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CustomersFX" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -595,10 +702,19 @@
       <option name="presentableId" value="Default" />
       <updated>1493921405912</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1521405861063</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521405861063</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -638,6 +754,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -824,7 +944,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/examples/DraggablePanelsExample.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
-          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -832,7 +952,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/examples/Buttons.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <element signature="e#18#39#0" expanded="true" />
           </folding>

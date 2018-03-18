@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BorderPane.iml" filepath="$PROJECT_DIR$/.idea/modules/BorderPane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/borderpane.iml" filepath="$PROJECT_DIR$/.idea/modules/borderpane.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/borderpane-build.iml" filepath="$PROJECT_DIR$/.idea/modules/borderpane-build.iml" />
     </modules>
   </component>
