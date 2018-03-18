@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HBoxPane.iml" filepath="$PROJECT_DIR$/.idea/modules/HBoxPane.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/borderpane-build.iml" filepath="$PROJECT_DIR$/.idea/modules/borderpane-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hboxpane.iml" filepath="$PROJECT_DIR$/.idea/modules/hboxpane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hboxpane-build.iml" filepath="$PROJECT_DIR$/.idea/modules/hboxpane-build.iml" />
     </modules>
   </component>
 </project>
