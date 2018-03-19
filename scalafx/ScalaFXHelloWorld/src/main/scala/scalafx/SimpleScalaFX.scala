@@ -3,7 +3,7 @@ import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
-import scalafx.scene.control.Button
+import scalafx.scene.control.{Button, Label}
 import scalafx.scene.layout.StackPane
 import scalafx.scene.paint.Color
 import scalafx.scene.shape.Rectangle
@@ -13,13 +13,13 @@ object SimpleScalaFX extends JFXApp {
   stage = new PrimaryStage {
     title = "Simple ScalaFX App"
     scene = new Scene {
-      root = new StackPane {
+      content = new StackPane {
         padding = Insets(20)
-        content = Seq(
+        children = Seq(
           new Rectangle {
             width = 200
             height = 100
-            fill = Color.DEEPSKYBLUE
+            fill = Color.DeepSkyBlue
           },
           new Text {
             text = "ScalaFX"
