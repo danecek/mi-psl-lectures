@@ -8,27 +8,29 @@ import scalafx.scene.control.{Button, _}
 import scalafx.scene.layout.HBox
 
 /**
- * Created by danecek on 15.3.15.
- */
+  * Created by danecek on 15.3.15.
+  */
 object BorderPaneMain extends JFXApp {
 
   stage = new PrimaryStage {
     title = "Horizontal Box"
-    scene = new Scene() {
-      content = List {
-        new HBox {
-          padding = Insets(20)
-          spacing = 5
-          alignment = Pos.CENTER
-          content = List(
-            new Label { text = "Text:" },
-            new TextField { promptText = "Type something..." },
-            new Button { text = "Search..." })
-        }
+    scene = new Scene(400, 300) {
+      root = new HBox {
+        padding = Insets(20)
+        spacing = 5
+        alignment = Pos.Center
+        children = List(
+            new Label {
+              text = "Text:"
+            },
+            new TextField {
+              promptText = "Type something..."
+            },
+            new Button {
+              text = "Search..."
+            })
       }
     }
-
   }
-
 
 }
