@@ -3,7 +3,7 @@ package customers.view
 import customers.{Customer, Data}
 import scalafx.beans.property.StringProperty
 import scalafx.scene.control.TableColumn._
-import scalafx.scene.control.{SelectionMode, SelectionModel, TableColumn, TableView}
+import scalafx.scene.control.{SelectionMode, TableColumn, TableView}
 
 object CustomersTable extends TableView[Customer](Data.data) {
   columns ++= List(
@@ -20,8 +20,6 @@ object CustomersTable extends TableView[Customer](Data.data) {
   )
 
   this.getSelectionModel.setSelectionMode(SelectionMode.Multiple)
-
-
 
 
 }

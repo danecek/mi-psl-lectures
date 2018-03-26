@@ -1,7 +1,7 @@
 package customers
 
 import customers.actions.{CreateAction, DeleteAction, ExitAction}
-import scalafx.scene.control.{Menu, MenuBar, MenuItem}
+import scalafx.scene.control.{Menu, MenuBar}
 
 object CustomersMenuBar extends MenuBar {
   menus = Seq(

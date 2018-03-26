@@ -4,9 +4,8 @@ package customers
 import scalafx.application.Platform
 import scalafx.geometry.Insets
 import scalafx.scene.control._
-import scalafx.scene.input.KeyEvent
 import scalafx.scene.layout.{GridPane, VBox}
-import scalafx.scene.paint.{Color, Paint}
+import scalafx.scene.paint.Color
 import scalafx.scene.text.Text
 
 
@@ -22,11 +21,11 @@ class CreateDialog extends Dialog[Customer] {
   // Create the username and password labels and fields.
   val name = new TextField() {
     promptText = "Name"
-    onKeyReleased =  _=>myvalidate
+    onKeyReleased = _ => myvalidate
   }
   val address = new TextField() {
     promptText = "Address"
-    onKeyReleased =  _=>myvalidate
+    onKeyReleased = _ => myvalidate
   }
 
   val grid: GridPane = new GridPane() {
@@ -47,7 +46,7 @@ class CreateDialog extends Dialog[Customer] {
   dialogPane().setContent(new VBox(grid, error))
 
   //  // Request focus on the username field by default.
-   Platform.runLater(name.requestFocus())
+  Platform.runLater(name.requestFocus())
 
   // When the login button is clicked, convert the result to
   // a username-password-pair.
@@ -67,14 +66,18 @@ class CreateDialog extends Dialog[Customer] {
     }
   }
 
-  def myvalidate()  {
-
-    if (name.text.value.isEmpty)
+  def myvalidate() {
+    dialogPane.value.lookupButton(ButtonType.OK).setDisable(true)
+    if (name.text.value.isEmpty) {
       error.text = "invalid name"
+    }
     else if (address.text.value.isEmpty)
       error.text = "invalid adddress"
-    else
+    else {
+      dialogPane.value.lookupButton(ButtonType.OK).setDisable(false)
       error.text.value = ""
+    }
+
   }
 
 }

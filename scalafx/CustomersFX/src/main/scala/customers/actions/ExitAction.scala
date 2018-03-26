@@ -5,5 +5,5 @@ import scalafx.application.Platform
 
 object ExitAction extends CustomersAction {
   override val title: String = "Exit"
-  override val handler: EventHandler[ActionEvent] =  _=>Platform.exit()
+  override val handler: EventHandler[ActionEvent] = _ => Platform.exit()
 }
