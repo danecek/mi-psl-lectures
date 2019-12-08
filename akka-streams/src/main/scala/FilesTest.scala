@@ -1,4 +1,4 @@
-import java.nio.file.{Files, Path}
+import java.nio.file.Path
 
 import akka.NotUsed
 import akka.actor.ActorSystem
@@ -7,8 +7,16 @@ import akka.stream.scaladsl.{Broadcast, FileIO, Merge, Sink, Source}
 import akka.util.ByteString
 
 import scala.concurrent.Future
+import scala.io.BufferedSource
 
-object Simplified {
+object FilesTest {
+
+  def s0(): Unit = {
+    val f: BufferedSource = io.Source.fromFile("first", "utf8")
+    val sec: Source[String, NotUsed] = Source.fromIterator(f.getLines)
+    implicit val system = ActorSystem("QuickStart")
+    sec.runForeach(x => println(x))
+  }
 
   def s1(): Unit = {
     val sourceOne = Source(1 to 2)
@@ -27,6 +35,6 @@ object Simplified {
   }
 
   def main(args: Array[String]): Unit = {
-    s2()
+    s0()
   }
 }
