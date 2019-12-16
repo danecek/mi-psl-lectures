@@ -290,22 +290,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1318" height="178" key="GridCell.Tab.0.bottom" timestamp="1576489668561">
+    <state width="1318" height="178" key="GridCell.Tab.0.bottom" timestamp="1576489952554">
       <screen x="0" y="32" width="1368" height="880" />
     </state>
-    <state width="1318" height="178" key="GridCell.Tab.0.bottom/0.32.1368.880@0.32.1368.880" timestamp="1576489668561" />
-    <state width="1318" height="178" key="GridCell.Tab.0.center" timestamp="1576489668560">
+    <state width="1318" height="178" key="GridCell.Tab.0.bottom/0.32.1368.880@0.32.1368.880" timestamp="1576489952554" />
+    <state width="1318" height="178" key="GridCell.Tab.0.center" timestamp="1576489952552">
       <screen x="0" y="32" width="1368" height="880" />
     </state>
-    <state width="1318" height="178" key="GridCell.Tab.0.center/0.32.1368.880@0.32.1368.880" timestamp="1576489668560" />
-    <state width="1318" height="178" key="GridCell.Tab.0.left" timestamp="1576489668559">
+    <state width="1318" height="178" key="GridCell.Tab.0.center/0.32.1368.880@0.32.1368.880" timestamp="1576489952552" />
+    <state width="1318" height="178" key="GridCell.Tab.0.left" timestamp="1576489952551">
       <screen x="0" y="32" width="1368" height="880" />
     </state>
-    <state width="1318" height="178" key="GridCell.Tab.0.left/0.32.1368.880@0.32.1368.880" timestamp="1576489668559" />
-    <state width="1318" height="178" key="GridCell.Tab.0.right" timestamp="1576489668560">
+    <state width="1318" height="178" key="GridCell.Tab.0.left/0.32.1368.880@0.32.1368.880" timestamp="1576489952551" />
+    <state width="1318" height="178" key="GridCell.Tab.0.right" timestamp="1576489952553">
       <screen x="0" y="32" width="1368" height="880" />
     </state>
-    <state width="1318" height="178" key="GridCell.Tab.0.right/0.32.1368.880@0.32.1368.880" timestamp="1576489668560" />
+    <state width="1318" height="178" key="GridCell.Tab.0.right/0.32.1368.880@0.32.1368.880" timestamp="1576489952553" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
