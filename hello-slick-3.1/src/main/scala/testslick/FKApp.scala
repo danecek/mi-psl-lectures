@@ -1,7 +1,6 @@
 package testslick
 
-import slick.driver.H2Driver
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile.api._
 
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -13,17 +12,21 @@ object FKApp extends App {
 
   val users: TableQuery[UsersTable] = TableQuery[UsersTable]
 
-  // val usersInsert: H2Driver.ReturningInsertActionComposer[User, Int] = users returning users.map(_.id)
-
   def addUser(u: User): DBIO[Int] = users returning users.map(_.id) += u
 
-  //println(usersInsert.insertStatement.mkString)
+  def addUser2(u: User): DBIO[User] = {
+    val messagesReturningRow = users returning users.map(_.id) into {
+      (user: User, genId: Int) => user.copy(id = Option(genId))
+    }
+    messagesReturningRow += u
+  }
+
 
   val emails: TableQuery[EmailsTable] = TableQuery[EmailsTable]
 
   val createSchemas: DBIO[Unit] = (users.schema ++ emails.schema).create
 
-  val createTomEmails: DBIO[Option[Int]] = addUser(User("Tom")).flatMap(tomId =>
+  val createTomEmails: DBIO[Option[Int]] = addUser(User("Tom")).flatMap((tomId: Int) =>
     emails ++= Seq(Email("tom@seznam.cz", tomId), Email("tom@gmail.com", tomId)))
 
   val createJerryEmails: DBIO[Option[Int]] =
@@ -32,7 +35,5 @@ object FKApp extends App {
          } yield emailsCount
 
   println(Await.result(db.run(createSchemas >> createTomEmails >> createJerryEmails >> emails.result), Duration.Inf))
-
-
 
 }

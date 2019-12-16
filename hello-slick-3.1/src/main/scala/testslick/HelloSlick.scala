@@ -1,6 +1,6 @@
 package testslick
 
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile.api._
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 

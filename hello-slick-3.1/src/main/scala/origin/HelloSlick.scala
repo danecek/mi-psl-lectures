@@ -1,8 +1,6 @@
 package origin
-import slick.backend.DatabasePublisher
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile.api._
 import slick.lifted.{ForeignKeyQuery, ProvenShape}
-import slick.profile.FixedSqlAction
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
@@ -79,7 +77,7 @@ object HelloSlick extends App {
       val coffeeNamesAction: StreamingDBIO[Seq[String], String] =
         coffees.map(_.name).result
 
-      val coffeeNamesPublisher: DatabasePublisher[String] =
+      val coffeeNamesPublisher =
         db.stream(coffeeNamesAction)
 
       coffeeNamesPublisher.foreach(println)
@@ -123,7 +121,7 @@ object HelloSlick extends App {
       val deleteQuery: Query[origin.Coffees, (String, Int, Double), Seq] =
         coffees.filter(_.price < 8.0)
 
-      val deleteAction: FixedSqlAction[Int, NoStream, Effect.Write] = deleteQuery.delete
+      val deleteAction = deleteQuery.delete
 
       // Print the SQL for the p2.Coffees delete query
       println("Generated SQL for p2.Coffees delete:\n" + deleteAction.statements)

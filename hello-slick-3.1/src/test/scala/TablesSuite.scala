@@ -1,9 +1,9 @@
-import org.scalatest._
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.time.{Seconds, Span}
-import origin.{Coffees, Suppliers}
-import slick.driver.H2Driver.api._
-import slick.jdbc.meta._
+import org.scalatest.{BeforeAndAfter, FunSuite}
+import origin.Suppliers
+import slick.jdbc.H2Profile.api._
+import slick.jdbc.meta.MTable
 
 class TablesSuite extends FunSuite with BeforeAndAfter with ScalaFutures {
   implicit override val patienceConfig = PatienceConfig(timeout = Span(5, Seconds))

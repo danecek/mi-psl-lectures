@@ -1,9 +1,6 @@
 package testslick
 
-import slick.dbio.{DBIOAction, Effect}
-import slick.driver.H2Driver.api._
-import slick.profile.{FixedSqlAction, FixedSqlStreamingAction}
-
+import slick.jdbc.H2Profile.api._
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 

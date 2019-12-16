@@ -1,10 +1,11 @@
-import slick.driver.H2Driver.api._
-import slick.lifted.ProvenShape
+package fk
+
+import slick.jdbc.H2Profile.api._
+import slick.lifted.{ProvenShape, TableQuery, Tag}
 
 import scala.concurrent.Await
-import scala.concurrent.duration.Duration
 import scala.concurrent.ExecutionContext.Implicits.global
-
+import scala.concurrent.duration.Duration
 
 
 object ForeignKeyExample extends App {

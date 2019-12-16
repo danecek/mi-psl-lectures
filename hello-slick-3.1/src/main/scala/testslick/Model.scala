@@ -1,6 +1,6 @@
 package testslick
 
-import slick.driver.H2Driver.api._
+import slick.jdbc.H2Profile.api._
 import slick.lifted.{ForeignKeyQuery, ProvenShape}
 
 case class User(name: String, id: Option[Int] = None)

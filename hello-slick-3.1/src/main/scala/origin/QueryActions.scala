@@ -9,6 +9,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
 
 
+/*
 class Suppliers(tag: Tag)
   extends Table[(Int, String)](tag, "SUPPLIERS") {
 
@@ -17,6 +18,7 @@ class Suppliers(tag: Tag)
 
   def * : ProvenShape[(Int, String)] =  (id, name)
 }
+
 
 class Coffees(tag: Tag)
   extends Table[(String, Int, Double)](tag, "COFFEES") {
@@ -31,6 +33,8 @@ class Coffees(tag: Tag)
   def supplier: ForeignKeyQuery[origin.Suppliers, (Int, String)] =
     foreignKey("SUP_FK", supID, TableQuery[origin.Suppliers])(_.id)
 }
+*/
+
 object QueryActions extends App {
 
   // A simple dictionary table with keys and values
