@@ -1,10 +1,36 @@
+package origin
+
+import slick.dbio.DBIO
 import slick.driver.H2Driver.api._
+import slick.lifted.{ForeignKeyQuery, ProvenShape, TableQuery}
 
 import scala.concurrent.Await
-import scala.concurrent.duration.Duration
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.Duration
 
-// Demonstrates various ways of reading data
+
+class Suppliers(tag: Tag)
+  extends Table[(Int, String)](tag, "SUPPLIERS") {
+
+  def id: Rep[Int] = column[Int]("SUP_ID", O.PrimaryKey)
+  def name: Rep[String] = column[String]("SUP_NAME")
+
+  def * : ProvenShape[(Int, String)] =  (id, name)
+}
+
+class Coffees(tag: Tag)
+  extends Table[(String, Int, Double)](tag, "COFFEES") {
+
+  def name: Rep[String] = column[String]("COF_NAME", O.PrimaryKey)
+  def supID: Rep[Int] = column[Int]("SUP_ID")
+  def price: Rep[Double] = column[Double]("PRICE")
+  def * : ProvenShape[(String, Int, Double)] =
+    (name, supID, price)
+
+  // A reified foreign key relation that can be navigated to create a join
+  def supplier: ForeignKeyQuery[origin.Suppliers, (Int, String)] =
+    foreignKey("SUP_FK", supID, TableQuery[origin.Suppliers])(_.id)
+}
 object QueryActions extends App {
 
   // A simple dictionary table with keys and values

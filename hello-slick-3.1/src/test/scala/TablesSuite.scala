@@ -1,6 +1,7 @@
 import org.scalatest._
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.time.{Seconds, Span}
+import origin.{Coffees, Suppliers}
 import slick.driver.H2Driver.api._
 import slick.jdbc.meta._
 
@@ -8,7 +9,7 @@ class TablesSuite extends FunSuite with BeforeAndAfter with ScalaFutures {
   implicit override val patienceConfig = PatienceConfig(timeout = Span(5, Seconds))
 
   val suppliers = TableQuery[Suppliers]
-  val coffees = TableQuery[Coffees]
+  val coffees = TableQuery[origin.Coffees]
   
   var db: Database = _
 
@@ -16,7 +17,7 @@ class TablesSuite extends FunSuite with BeforeAndAfter with ScalaFutures {
     db.run((suppliers.schema ++ coffees.schema).create).futureValue
   
   def insertSupplier(): Int =
-    db.run(suppliers += (101, "Acme, Inc.", "99 Market Street", "Groundsville", "CA", "95199")).futureValue
+    db.run(suppliers += (101, "Acme, Inc.")).futureValue
   
   before { db = Database.forConfig("h2mem1") }
   
@@ -37,7 +38,7 @@ class TablesSuite extends FunSuite with BeforeAndAfter with ScalaFutures {
     assert(insertCount == 1)
   }
   
-  test("Query Suppliers works") {
+  test("Query p2.Suppliers works") {
     createSchema()
     insertSupplier()
     val results = db.run(suppliers.result).futureValue

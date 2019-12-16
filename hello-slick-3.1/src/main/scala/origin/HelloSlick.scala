@@ -1,61 +1,71 @@
+package origin
 import slick.backend.DatabasePublisher
-import slick.dbio.{DBIO, Effect, StreamingDBIO}
-import slick.driver.H2Driver
 import slick.driver.H2Driver.api._
+import slick.lifted.{ForeignKeyQuery, ProvenShape}
 import slick.profile.FixedSqlAction
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
-// The main application
+class Suppliers(tag: Tag)
+  extends Table[(Int, String)](tag, "SUPPLIERS") {
+
+  def id: Rep[Int] = column[Int]("SUP_ID", O.PrimaryKey)
+  def name: Rep[String] = column[String]("SUP_NAME")
+
+  def * : ProvenShape[(Int, String)] =  (id, name)
+}
+
+class Coffees(tag: Tag)
+  extends Table[(String, Int, Double)](tag, "COFFEES") {
+
+  def name: Rep[String] = column[String]("COF_NAME", O.PrimaryKey)
+  def supID: Rep[Int] = column[Int]("SUP_ID")
+  def price: Rep[Double] = column[Double]("PRICE")
+  def * : ProvenShape[(String, Int, Double)] =
+    (name, supID, price)
+
+  // A reified foreign key relation that can be navigated to create a join
+  def supplier: ForeignKeyQuery[origin.Suppliers, (Int, String)] =
+    foreignKey("SUP_FK", supID, TableQuery[origin.Suppliers])(_.id)
+}
+
 object HelloSlick extends App {
-  val db: H2Driver.backend.Database = Database.forConfig("h2mem1")
+  val db: Database = Database.forConfig("h2mem1")
   try {
-
-    // The query interface for the Suppliers table
-    val suppliers: TableQuery[Suppliers] = TableQuery[Suppliers]
-
-    // the query interface for the Coffees table
-    val coffees: TableQuery[Coffees] = TableQuery[Coffees]
+    val suppliers: TableQuery[origin.Suppliers] = TableQuery[origin.Suppliers]
+    val coffees: TableQuery[origin.Coffees] = TableQuery[origin.Coffees]
 
     val setupAction: DBIO[Unit] = DBIO.seq(
-      // Create the schema by combining the DDLs for the Suppliers and Coffees
-      // tables using the query interfaces
       (suppliers.schema ++coffees.schema).create,
-
-      // Insert some suppliers
-      suppliers+=(101, "Acme, Inc.", "99 Market Street", "Groundsville", "CA", "95199"),
-      suppliers += (49, "Superior Coffee", "1 Party Place", "Mendocino", "CA", "95460"),
-      suppliers += (150, "The High Ground", "100 Coffee Lane", "Meadows", "CA", "93966")
+      suppliers+=(101, "Acme, Inc."),
+      suppliers += (49, "Superior Coffee"),
+      suppliers += (150, "The High Ground")
     )
 
     val setupFuture: Future[Unit] = db.run(setupAction)
+
     val f: Future[Unit] = setupFuture.flatMap { _ =>
 
-      // Insert some coffees (using JDBC's batch insert feature)
-      val insertAction: DBIO[Option[Int]] = coffees ++= Seq(
-        ("Colombian", 101, 7.99, 0, 0),
-        ("French_Roast", 49, 8.99, 0, 0),
-        ("Espresso", 150, 9.99, 0, 0),
-        ("Colombian_Decaf", 101, 8.99, 0, 0),
-        ("French_Roast_Decaf", 49, 9.99, 0, 0)
+     val insertAction: DBIO[Option[Int]] = coffees ++= Seq(
+        ("Colombian", 101, 7.99),
+        ("French_Roast", 49, 8.99)
       )
 
       val insertAndPrintAction: DBIO[Unit] = insertAction.map { coffeesInsertResult =>
-        // Print the number of rows inserted
         coffeesInsertResult foreach { numRows =>
-          println(s"Inserted $numRows rows into the Coffees table")
+          println(s"Inserted $numRows rows into the p2.Coffees table")
         }
       }
 
-      val allSuppliersAction: DBIO[Seq[(Int, String, String, String, String, String)]] =
-        streamableQueryActionExtensionMethods(suppliers).result
+      val allSuppliersAction: DBIO[Seq[(Int, String)]] =
+        suppliers.result
 
-      val combinedAction: DBIO[Seq[(Int, String, String, String, String, String)]] =
+      val combinedAction: DBIO[Seq[(Int, String)]] =
         insertAndPrintAction >> allSuppliersAction
 
-      val combinedFuture: Future[Seq[(Int, String, String, String, String, String)]] =
+      val combinedFuture: Future[Seq[(Int, String)]] =
         db.run(combinedAction)
 
       combinedFuture.map { allSuppliers =>
@@ -78,8 +88,8 @@ object HelloSlick extends App {
 
       /* Filtering / Where */
 
-      // Construct a query where the price of Coffees is > 9.0
-      val filterQuery: Query[Coffees, (String, Int, Double, Int, Int), Seq] =
+      // Construct a query where the price of p2.Coffees is > 9.0
+      val filterQuery: Query[origin.Coffees, (String, Int, Double), Seq] =
         coffees.filter(_.price > 9.0)
 
       // Print the SQL for the filter query
@@ -93,12 +103,12 @@ object HelloSlick extends App {
       /* Update */
 
       // Construct an update query with the sales column being the one to update
-      val updateQuery: Query[Rep[Int], Int, Seq] = coffees.map(_.sales)
+      val updateQuery: Query[Rep[Double], Double, Seq] = coffees.map(_.price)
 
       val updateAction: DBIO[Int] = updateQuery.update(1)
 
-      // Print the SQL for the Coffees update query
-      println("Generated SQL for Coffees update:\n" + updateQuery.updateStatement)
+      // Print the SQL for the p2.Coffees update query
+      println("Generated SQL for p2.Coffees update:\n" + updateQuery.updateStatement)
 
       // Perform the update
       db.run(updateAction.map { numUpdatedRows =>
@@ -110,13 +120,13 @@ object HelloSlick extends App {
       /* Delete */
 
       // Construct a delete query that deletes coffees with a price less than 8.0
-      val deleteQuery: Query[Coffees, (String, Int, Double, Int, Int), Seq] =
+      val deleteQuery: Query[origin.Coffees, (String, Int, Double), Seq] =
         coffees.filter(_.price < 8.0)
 
       val deleteAction: FixedSqlAction[Int, NoStream, Effect.Write] = deleteQuery.delete
 
-      // Print the SQL for the Coffees delete query
-      println("Generated SQL for Coffees delete:\n" + deleteAction.statements)
+      // Print the SQL for the p2.Coffees delete query
+      println("Generated SQL for p2.Coffees delete:\n" + deleteAction.statements)
 
       // Perform the delete
       db.run(deleteAction).map { numDeletedRows =>
@@ -127,7 +137,7 @@ object HelloSlick extends App {
 
       /* Sorting / Order By */
 
-      val sortByPriceQuery: Query[Coffees, (String, Int, Double, Int, Int), Seq] =
+      val sortByPriceQuery: Query[origin.Coffees, (String, Int, Double), Seq] =
         coffees.sortBy(_.price)
 
       println("Generated SQL for query sorted by price:\n" +
@@ -153,7 +163,7 @@ object HelloSlick extends App {
 
       /* Joins */
 
-      // Join the tables using the relationship defined in the Coffees table
+      // Join the tables using the relationship defined in the p2.Coffees table
       val joinQuery: Query[(Rep[String], Rep[String]), (String, String), Seq] = for {
         c <- coffees if c.price > 9.0
         s <- c.supplier
