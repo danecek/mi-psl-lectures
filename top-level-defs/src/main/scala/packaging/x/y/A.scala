@@ -2,22 +2,22 @@ package packaging
 
 package x.y {
 
-object A
+  object A
 
 }
 
 package x {
-package y {
+  package y {
 
-object B {
+    object B {
 
-  def main(args: Array[String]) {
-    println(A)
+      def main(args: Array[String]) {
+        println(A)
+      }
+
+    }
+
   }
-
-}
-
-}
 
 }
 

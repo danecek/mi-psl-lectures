@@ -1,15 +1,15 @@
 package compunit {
 
-package inner {
+  package inner {
 
-object Main {
-  def main(args: Array[String]) {
-    println(this)
-    println(A)
-    println(B)
+    object Main {
+      def main(args: Array[String]) {
+        println(this)
+        println(A)
+        println(B)
+      }
+    }
+
   }
-}
-
-}
 
 }

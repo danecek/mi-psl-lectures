@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/top-level-defs.iml" filepath="$PROJECT_DIR$/.idea/modules/top-level-defs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/top-level-defs-build.iml" filepath="$PROJECT_DIR$/.idea/modules/top-level-defs-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topleveldefs.iml" filepath="$PROJECT_DIR$/.idea/modules/topleveldefs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/topleveldefs-build.iml" filepath="$PROJECT_DIR$/.idea/modules/topleveldefs-build.iml" />
     </modules>
   </component>
 </project>
