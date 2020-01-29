@@ -1,3 +1,5 @@
+package bounds
+
 import scala.reflect.runtime.universe
 
 object Main {
@@ -14,14 +16,12 @@ object Main {
     println(x.tpe)
   }
 
-  def outputLength[T <% String](x : T)={
-    x.length
-  }
+  def outputLength[T <% String](x : T)= x.length
 
   implicit def int2String(x : Int) = x.toString
 
   def main(args: Array[String]){
-    // println(outputLength(4*4))
+    println(outputLength(4*4))
     printType2[Int]
 
   }
